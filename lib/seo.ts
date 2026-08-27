@@ -26,8 +26,11 @@ type PageSeo = {
 export function buildMetadata({ title, description, path = "/", image }: PageSeo = {}): Metadata {
   const url = new URL(path, SITE.url).toString();
   const desc = description ?? SITE.description;
-  const ogImage = image ?? SITE.ogImage;
   const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
+
+  // og:image / twitter:image are provided site-wide by app/opengraph-image.tsx
+  // (Next file convention). Pass `image` only to override for a specific page.
+  const imageOverride = image ? { images: [{ url: image, width: 1200, height: 630, alt: SITE.name }] } : {};
 
   return {
     title: fullTitle,
@@ -39,13 +42,13 @@ export function buildMetadata({ title, description, path = "/", image }: PageSeo
       title: fullTitle,
       description: desc,
       url,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: SITE.name }],
+      ...imageOverride,
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description: desc,
-      images: [ogImage],
+      ...(image ? { images: [image] } : {}),
     },
   };
 }
