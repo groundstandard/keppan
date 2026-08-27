@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
+/*
+  Keppan design system — mirrors the original site's tokens.
+  Dark ground (#131313), cream foreground (#fdfcfa), red accent (#db3b2b).
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #131313;
+  --foreground: #fdfcfa;
+  --muted: #a6a6a6;
+  --muted-2: #ffffffb3;
+  --card: #1a1a1a;
+  --card-border: #ffffff1a;
+  --accent: #db3b2b;
+  --accent-foreground: #fdfcfa;
+  --accent-hover: #c22f21;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+
+  --font-display: var(--font-outfit);
+  --font-sans: var(--font-inter);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--card-border);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.container-k {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* Eyebrow / badge label */
+.eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
