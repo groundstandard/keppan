@@ -246,11 +246,13 @@
       });
     });
 
-    // Mobile "Open menu"
+    // Mobile "Open menu" — only wire a real menu button (has "menu" in its label
+    // or text). The homepage header has no menu button, just "Get Early Access",
+    // so we must NOT fall back to the last header button there.
     var menuBtn = Array.prototype.slice.call(header.querySelectorAll("button")).filter(function (b) {
       var lbl = (b.getAttribute("aria-label") || b.textContent || "").toLowerCase();
       return lbl.indexOf("menu") !== -1;
-    })[0] || header.querySelector("button:last-of-type");
+    })[0];
     if (menuBtn && !menuBtn.dataset.kNav) {
       menuBtn.dataset.kNav = "1";
       menuBtn.addEventListener("click", function (e) {
