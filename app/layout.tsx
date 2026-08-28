@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./keppan.css";
 import { SITE, buildMetadata } from "@/lib/seo";
 
@@ -19,7 +20,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script src="/enhance.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }

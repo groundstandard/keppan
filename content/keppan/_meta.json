@@ -3,7 +3,7 @@
     "title": "Compare Keppan | Every Alternative, Honestly",
     "description": "Every Keppan comparison in one place—honest, dated, side-by-side tables against every major membership software alternative.",
     "canonical": "https://keppan.com/compare",
-    "bytes": 78032
+    "bytes": 78039
   },
   "compare__keppan-vs-abc-fitness": {
     "title": "Keppan vs ABC Fitness | Honest Comparison",
@@ -147,49 +147,49 @@
     "title": "Keppan Features — Everything a Membership Runs On",
     "description": "Every tool a membership business needs: billing, scheduling, check-in, ranks, communication, reporting. One system.",
     "canonical": "https://keppan.com/features",
-    "bytes": 115949
+    "bytes": 115991
   },
   "features__attendance": {
     "title": "Attendance Tracking Software — Keppan",
     "description": "Front-desk kiosk check-in, live class rosters, attendance history, and streaks that keep members coming back.",
     "canonical": "https://keppan.com/features/attendance",
-    "bytes": 57249
+    "bytes": 57256
   },
   "features__billing": {
     "title": "Membership Billing Software — Keppan",
     "description": "Recurring billing that collects on time. Memberships, trials, class packs, freezes, and late-fee rules—built for membership businesses.",
     "canonical": "https://keppan.com/features/billing",
-    "bytes": 56956
+    "bytes": 56963
   },
   "features__communication": {
     "title": "Membership Communication Software — Keppan",
     "description": "Email and SMS built into the member record. Class updates, billing notices, and announcements that actually get read.",
     "canonical": "https://keppan.com/features/communication",
-    "bytes": 57713
+    "bytes": 57720
   },
   "features__members": {
     "title": "Member Management Software — Keppan",
     "description": "Every student, every family, one clean record. Profiles, family accounts, notes, and full member history in one membership CRM.",
     "canonical": "https://keppan.com/features/members",
-    "bytes": 56886
+    "bytes": 56893
   },
   "features__ranks": {
     "title": "Belt Rank Tracking Software — Keppan",
     "description": "Track every student's rank, stripes, and testing history. Promotion criteria, eligibility lists, and rank ceremonies in one place.",
     "canonical": "https://keppan.com/features/ranks",
-    "bytes": 56120
+    "bytes": 56127
   },
   "features__scheduling": {
     "title": "Class Scheduling & Booking Software — Keppan",
     "description": "Build your class calendar once and let it run. Recurring schedules, capacity limits, and member self-booking.",
     "canonical": "https://keppan.com/features/scheduling",
-    "bytes": 57368
+    "bytes": 57375
   },
   "founding-100": {
     "title": "The Founding 100 — $100/mo for Life | Keppan",
     "description": "100 schools. $100/mo locked for life—every feature, every tier. Printed founding certificate. Full refund if we haven't launched by Dec 31, 2026.",
     "canonical": "https://keppan.com/founding-100",
-    "bytes": 64292
+    "bytes": 64306
   },
   "gyms-fitness": {
     "title": "Gym & Fitness Studio Management Software | Keppan",
@@ -201,7 +201,7 @@
     "title": "Keppan — Martial Arts School Management Software",
     "description": "Membership management software for businesses built on commitment—billing, scheduling, attendance, CRM in one system. Launching first in martial arts.",
     "canonical": "https://keppan.com/",
-    "bytes": 148268
+    "bytes": 148304
   },
   "login": {
     "title": "Keppan — Sign In",
@@ -219,43 +219,43 @@
     "title": "BJJ Gym Management Software | Keppan",
     "description": "BJJ gym software for academies built on lineage—billing, attendance, belt ranks with stripes, gi and no-gi scheduling, family accounts.",
     "canonical": "https://keppan.com/martial-arts/bjj",
-    "bytes": 66565
+    "bytes": 66579
   },
   "martial-arts__boxing": {
     "title": "Boxing Gym Software | Keppan",
     "description": "Boxing gym software for clubs and studios—memberships, round tracking, open gym scheduling, drop-in management, and member CRM.",
     "canonical": "https://keppan.com/martial-arts/boxing",
-    "bytes": 67000
+    "bytes": 67014
   },
   "martial-arts__judo": {
     "title": "Judo Club Software | Keppan",
     "description": "Judo club software for clubs with complex rank structures and competition rosters—memberships, gradings, and scheduling in one place.",
     "canonical": "https://keppan.com/martial-arts/judo",
-    "bytes": 66870
+    "bytes": 66884
   },
   "martial-arts__karate": {
     "title": "Karate School Software | Keppan",
     "description": "Karate school software for dojos with strong families and grading programs—billing, scheduling, belt ranks, and kids programs in one system.",
     "canonical": "https://keppan.com/martial-arts/karate",
-    "bytes": 67269
+    "bytes": 67283
   },
   "martial-arts__mma": {
     "title": "MMA Gym Software | Keppan",
     "description": "MMA gym software for multi-discipline facilities—fight team rosters, hobbyist scheduling, recurring memberships, and attendance tracking.",
     "canonical": "https://keppan.com/martial-arts/mma",
-    "bytes": 66726
+    "bytes": 66740
   },
   "martial-arts__muay-thai": {
     "title": "Muay Thai Gym Software | Keppan",
     "description": "Muay Thai gym software for camps and clubs—memberships, class scheduling, attendance tracking, and member management in one system.",
     "canonical": "https://keppan.com/martial-arts/muay-thai",
-    "bytes": 67634
+    "bytes": 67648
   },
   "martial-arts__taekwondo": {
     "title": "Taekwondo School Software | Keppan",
     "description": "Taekwondo software for schools with grading cycles, belt ranks, family accounts, and youth programs—memberships and attendance handled.",
     "canonical": "https://keppan.com/martial-arts/taekwondo",
-    "bytes": 67739
+    "bytes": 67753
   },
   "memberships": {
     "title": "Membership Management System | Keppan Memberships",
@@ -273,7 +273,7 @@
     "title": "Keppan Pricing | Membership Software Plans",
     "description": "Simple tiers that scale with your member count. Founding 100 members lock $100/mo for life. See current plans and what every tier includes.",
     "canonical": "https://keppan.com/pricing",
-    "bytes": 104859
+    "bytes": 104873
   },
   "privacy": {
     "title": "Privacy Policy — Keppan",
@@ -291,7 +291,7 @@
     "title": "What Keppan Means | The Name, the Seal, the Oath",
     "description": "Keppan (血判) is the blood-oath seal signed to enter a classical Japanese ryu—the oldest membership commitment there is. Why we took the name.",
     "canonical": "https://keppan.com/story",
-    "bytes": 66042
+    "bytes": 66063
   },
   "terms": {
     "title": "Terms of Service — Keppan",
@@ -303,6 +303,6 @@
     "title": "Why \"Keppan\" — The Blood Oath Behind the Name",
     "description": "The story of the keppan, and why we named a software company after it.",
     "canonical": "https://keppan.com/why-keppan",
-    "bytes": 43836
+    "bytes": 43843
   }
 }
