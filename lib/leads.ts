@@ -1,10 +1,24 @@
 import { NextResponse } from "next/server";
 
 /**
+ * Resolve the GHL (or any) webhook for a given form. Checks a per-form env var
+ * first, then falls back to a single shared one — so Bobby can use one GHL
+ * inbound webhook for everything (routing by the `source` field) OR a separate
+ * webhook per form.
+ *   demo-request  -> LEAD_WEBHOOK_DEMO_REQUEST  | LEAD_WEBHOOK_URL
+ *   founding-seat -> LEAD_WEBHOOK_FOUNDING_SEAT | LEAD_WEBHOOK_URL
+ *   landing-lead  -> LEAD_WEBHOOK_LANDING_LEAD  | LEAD_WEBHOOK_URL
+ */
+function webhookFor(source: string): string | undefined {
+  const key = "LEAD_WEBHOOK_" + source.toUpperCase().replace(/-/g, "_");
+  return process.env[key] || process.env.LEAD_WEBHOOK_URL || undefined;
+}
+
+/**
  * Shared lead handler for the demo / founding-seat / landing-lead endpoints.
- * Validates the payload and forwards it to LEAD_WEBHOOK_URL (e.g. an n8n webhook
- * or CRM) when configured. Always succeeds for the visitor even if forwarding is
- * unset or fails, so the form never blocks a real lead.
+ * Validates the payload and forwards it to the configured GHL webhook. Always
+ * succeeds for the visitor even if forwarding is unset or fails, so the form
+ * never blocks a real lead.
  */
 export async function handleLead(req: Request, source: string) {
   let body: Record<string, unknown> = {};
@@ -31,7 +45,7 @@ export async function handleLead(req: Request, source: string) {
     receivedAt: new Date().toISOString(),
   };
 
-  const webhook = process.env.LEAD_WEBHOOK_URL;
+  const webhook = webhookFor(source);
   if (webhook) {
     try {
       await fetch(webhook, {
